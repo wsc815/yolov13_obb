@@ -1,0 +1,53 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Build / package
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+coverage.xml
+.coverage*
+htmlcov/
+
+# Training artifacts
+runs/
+wandb/
+mlruns/
+logs/
+log/
+
+# Model/export artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.torchscript
+*.rknn
+*_openvino_model/
+*_saved_model/
+
+# Temp
+*.log
+.DS_Store
+
+# Keep docs/assets tracked by default
