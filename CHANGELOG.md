@@ -4,7 +4,8 @@
 
 ## [Unreleased]
 
-- 预留：后续 OBB 适配与实验改动将在此追加。
+- 修复 AMP 自检流程：当本地缺少 `yolov13n.pt` 时，不再因 `FileNotFoundError` 崩溃；
+  现在会跳过 AMP 检查并继续训练。
 
 ## [0.1.0] - 2026-04-25
 
