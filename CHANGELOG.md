@@ -4,8 +4,12 @@
 
 ## [Unreleased]
 
-- 修复 AMP 自检流程：当本地缺少 `yolov13n.pt` 时，不再因 `FileNotFoundError` 崩溃；
-  现在会跳过 AMP 检查并继续训练。
+- 修复 OBB 验证阶段指标打印报错：`TypeError: not all arguments converted during string formatting`。
+  - 对齐 OBB 指标键数量，补齐 `metrics/mAP75(B)`。
+- 完成一次 `yolov13n-obb` 烟测训练验证（1 epoch），确认训练与验证流程可正常运行。
+  - 训练配置：`imgsz=640`, `batch=48`, `optimizer=SGD`。
+  - 数据集加载正常，AMP 自检通过。
+- 训练注意事项：保持原版 AMP 自检逻辑时，需要本地可用的 `yolov13n.pt` 权重文件。
 
 ## [0.1.0] - 2026-04-25
 

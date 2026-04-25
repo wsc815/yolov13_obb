@@ -6,8 +6,10 @@
 > 已做的最小改动：
 > - 新增 `ultralytics/cfg/models/v13/yolov13-obb.yaml`（将检测头从 `Detect` 切换为 `OBB`）
 > - 保留原 YOLOv13 主体结构与原作者文档内容，便于复现与对照
+> - 已完成 `yolov13n-obb` 的 1 epoch 烟测训练，训练/验证流程可用
 >
 > 训练 OBB 的示例命令可参考本仓库 `CHANGELOG.md` 与实验记录。
+> 使用原版 AMP 自检逻辑时，请确保本地存在 `yolov13n.pt`（用于 AMP 检查）。
 
 <p align="center">
     <img src="assets/icon.png" width="110" style="margin-bottom: 0.2;"/>
@@ -240,4 +242,3 @@ model.export(format="engine", half=True)  # or format="onnx"
   year={2025}
 }
 ```
-
