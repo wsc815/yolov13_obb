@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Fork 说明（yolov13_obb）**
+>
+> 本仓库基于原始 YOLOv13 代码进行维护，当前目标是支持旋转框（OBB）任务研究与对比实验。
+>
+> 已做的最小改动：
+> - 新增 `ultralytics/cfg/models/v13/yolov13-obb.yaml`（将检测头从 `Detect` 切换为 `OBB`）
+> - 保留原 YOLOv13 主体结构与原作者文档内容，便于复现与对照
+>
+> 训练 OBB 的示例命令可参考本仓库 `CHANGELOG.md` 与实验记录。
+
 <p align="center">
     <img src="assets/icon.png" width="110" style="margin-bottom: 0.2;"/>
 <p>
